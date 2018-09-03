@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testDependence]">
+  <test name="GroupDependence">
+    <groups>
+      <run>
+        <include name="init"/>
+        <include name="func"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="trainTestNG"/>
+    </packages>
+    <classes>
+      <class name="trainTestNG.EmailGeneratorTest"/>
+      <class name="trainTestNG.TestBase"/>
+      <class name="trainTestNG.TestDataProvider"/>
+      <class name="trainTestNG.TestFunc"/>
+      <class name="trainTestNG.TestNormal"/>
+      <class name="trainTestNG.WebTest"/>
+      <class name="trainTestNG.WebTestFactory"/>
+    </classes>
+  </test> <!-- GroupDependence -->
+  <test name="GroupDependence(failed)">
+    <groups>
+      <run>
+        <include name="init"/>
+        <include name="func"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="trainTestNG.TestFunc">
+        <methods>
+          <include name="testMethod1"/>
+          <include name="testMethod4"/>
+        </methods>
+      </class> <!-- trainTestNG.TestFunc -->
+      <class name="trainTestNG.TestBase">
+        <methods>
+          <include name="initial"/>
+          <include name="checkMethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- trainTestNG.TestBase -->
+    </classes>
+  </test> <!-- GroupDependence(failed) -->
+</suite> <!-- Failed suite [testDependence] -->

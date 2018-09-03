@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testDependence">
+
+
+  <test name="methodDependence"  enabled="false">
+    <classes>
+    	<class name="trainTestNG.TestFunc">
+    		<methods>
+    		<include name="testMethod1"/>
+    		<include name="testMethod4"/>
+    		</methods>
+    	</class>
+    </classes>
+  </test> 
+ 
+    <test name="GroupDependence" >
+     <groups>
+    	<run>
+    		<include name="init"/>
+    		<include name="func"/>
+    	</run>
+    </groups>
+    <packages>
+      <package name="trainTestNG" />
+   </packages>
+
+  </test> 
+  
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testEmail">
+
+  <test name="emailtest" >
+<!-- <parameter name="emailType" value="aa"/>  --> 
+<parameter name="emailType" value="aa"/> 
+    <classes>
+    	<class name="trainTestNG.EmailGeneratorTest">
+    		<methods>
+    		<include name="testRandomEmail1"/>
+    		</methods>
+    	</class>
+    </classes>
+  </test> 
+ 
+  
+</suite>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21" started-at="2018-08-16T07:45:22Z" finished-at="2018-08-16T07:45:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21" started-at="2018-08-16T07:45:22Z" finished-at="2018-08-16T07:45:22Z">
+      <class name="trainTestNG.TestDataProvider">
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)[pri:0, instance:trainTestNG.TestDataProvider@3dd3bcd]" name="verifyData1" duration-ms="7" started-at="2018-08-16T15:45:22Z" data-provider="test1" finished-at="2018-08-16T15:45:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAS610]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyData1 -->
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)[pri:0, instance:trainTestNG.TestDataProvider@3dd3bcd]" name="verifyData1" duration-ms="1" started-at="2018-08-16T15:45:22Z" data-provider="test1" finished-at="2018-08-16T15:45:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FED610]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30017]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyData1 -->
+      </class> <!-- trainTestNG.TestDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

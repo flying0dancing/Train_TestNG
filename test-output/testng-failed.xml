@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testEmail]">
+  <parameter name="emailType" value="aa"/>
+  <test name="emailtest(failed)">
+    <parameter name="emailType" value="aa"/>
+    <classes>
+      <class name="trainTestNG.EmailGeneratorTest">
+        <methods>
+          <include name="testRandomEmail1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- trainTestNG.EmailGeneratorTest -->
+    </classes>
+  </test> <!-- emailtest(failed) -->
+</suite> <!-- Failed suite [testEmail] -->
