@@ -31,7 +31,7 @@
 			<configuration>
 				<suiteXmlFiles>
 				<!-- TestNG suite XML files -->
-					<suiteXmlFile>testDependence.xml</suiteXmlFile>
+					<suiteXmlFile>suites/testEmail.xml</suiteXmlFile>
 				</suiteXmlFiles>
 			</configuration>
 	</plugin>
